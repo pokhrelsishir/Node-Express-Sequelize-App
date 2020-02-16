@@ -2,7 +2,7 @@ var express = require('express')
 
 var app = express()
 
-app.get('/', function (req, res) {
+app.get('/name', function (req, res) {
     res.json({
         name: "Sishir Pokhrel"
     })
