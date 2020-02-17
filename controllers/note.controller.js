@@ -24,9 +24,10 @@ var createNote = function (req, res) {
         subject: req.body.subject,
         detail: req.body.detail
     }).then(note => {
+        console.log(note);
         res.status(200).json({
-            status: 'success',
             note: note,
+            status: 'success',
             message: ""
         });
     }).catch(error => {
